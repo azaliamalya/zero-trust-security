@@ -1,0 +1,25 @@
+{
+  "name": "zero-trust-security",
+  "version": "1.0.0",
+  "description": "Praktikum Zero Trust Security - Sistem Nilai",
+  "main": "gateway/server.js",
+  "scripts": {
+    "init-db": "node database/init-db.js",
+    "gateway": "node gateway/server.js",
+    "nilai": "node service-nilai/server.js",
+    "transkrip": "node service-transkrip/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "private": true,
+  "allowScripts": {
+    "better-sqlite3@11.10.0": true
+  }
+}
